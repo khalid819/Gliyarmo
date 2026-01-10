@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<title>Student Helpdesk</title>
+<div class="null n">
+
+
+  <h1 class="z">Help Desk – Student Support</h1>
+  <br>
+  <p>Welcome to the Help Desk section of our educational website. This page is created to support students by
+    answering common questions, providing guidance, and helping you use our platform effectively.</p>
+  <br>
+  <p>If you face any difficulty while using our website, studying board questions, or using learning tools, this Help
+    Desk is here to assist you.</p>
+  <div class="button m btn-link">
+    <a href="#help" class="btn-link">
+      Need Help ?
+    </a>
+  </div>
+  <br>
+  <h3>How Can We Help You?</h3>
+  <br>
+  <p>We provide support in the following areas</p>
+  <ul>
+    <li>Questions related to board questions and study materials</li>
+    <li>Help with using tools like Question Generator, Solver, and Translator</li>
+    <li>General study guidance and academic support</li>
+    <li>Website navigation and technical issues</li>
+    <li>Feedback, suggestions, and improvement requests</li>
+  </ul>
+  <br>
+  <h3>Frequently Asked Questions (FAQ)</h3>
+  <br>
+  <p>Before contacting us, please check the FAQ section. Many common questions are already answered there to save your
+    time.</p>
+  <br>
+  <h3>Ask a Question</h3>
+  <br>
+  <p>If you cannot find an answer to your question, you can contact us directly through the Contact page or the
+    provided support form. Please explain your issue clearly so we can help you better.</p>
+  <br>
+  <h3>Our Support Policy</h3>
+  <br>
+  <ul>
+    <li>We aim to respond as quickly as possible</li>
+    <li>All support is educational and guidance-based</li>
+    <li>We do not provide exam cheating or illegal content</li>
+    <li>Respectful communication is expected from all users</li>
+  </ul>
+  <br>
+  <h3>Student-Friendly & Safe Environment</h3>
+  <br>
+  <p>Our Help Desk is designed to be safe, supportive, and suitable for students. We encourage positive learning and
+    responsible use of educational resources.</p>
+  <br>
+  <h3>Need Help? We’re Here for You</h3>
+  <br>
+  <p>Learning becomes easier when you are supported. If you need help, guidance, or clarification—don’t hesitate to
+    reach out.</p>
+  <br>
+  <div class="helpdesk-container" id="help">
+    <h3>If you have any questions, suggestions, or issues, feel free to contact us.</h3>
+
+    <form action="/help" method="post" class="helpdesk-form">
+
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Thought</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send</button>
+
+    </form>
+  </div>
+
+
+</div>
+</div>
+{% endblock body %}

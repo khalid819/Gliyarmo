@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  /* padding: 0; */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+
+}
+.nav-list {
+  width: 100%;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.534);
+  display: flex;
+
+  align-items: center;
+
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 0px 10px;
+
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: large;
+  font-family: "Fascinate";
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  color: #032cb3;
+  transform: translateY(-2px);
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.753) url('https://cdn.pixabay.com/photo/2016/11/02/10/04/chicago-1791002_640.jpg');
+  background-size: cover;
+  background-blend-mode: darken;
+  /* background-size: auto; */
+}
+
+.first {
+  color: white;
+  font-family: "Kanit", sans-serif;
+  height: 130vh;
+  display: flex;
+  margin-left: 60px;
+  justify-content: center;
+  flex-direction: column;
+  font-optical-sizing: auto;
+}
+
+.null {
+  color: white;
+  font-family: "kanit",sans-serif;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-optical-sizing: auto;
+  margin-left: 60px;
+  font-size: 18px;
+}
+
+.z {
+  font-size: 46px;
+
+}
+.k{
+  font-size: 18px;
+}
+
+.n {
+  margin-top: 100px;
+}
+
+.m {
+  color: white;
+  font-family: "Fascinate Inline", system-ui;
+  font-size: 40px;
+}
+
+.box-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+}
+
+.btn-link {
+  font-family: "Fascinate", system-ui;
+  display: inline-block;
+  padding: 12px 3px;
+  border: 2px solid #032cb3;
+  /* blue */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  
+  min-width: 100px;
+  min-height: 10px;
+  transition: all 0.3s ease;
+  background: none;
+}
+
+.btn-link:hover {
+  background-color: #032cb3;
+  transform: translateY(-2px);
+}
+
+.btn-link:active {
+  transform: translateY(0);
+}
+
+.button {
+  padding: -2px 40px;
+  padding-bottom: 0px;
+  display: inline-block;
+  min-width: 600px;
+  min-height: 20px;
+}
+
+.btn-li {
+  display: inline-block;
+  padding: 12px 24px;
+  
+  /* blue */
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #032cb3;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-li:hover {
+  background-color: #032cb3;
+  transform: translateY(-2px);
+}
+
+.btn-li:active {
+  transform: translateY(0);
+}
+
+.btn {
+  display: inline-block;
+  padding: 9px 8px;
+  font-family: "Fascinate", system-ui;
+}
+h6{
+  font-size: larger;
+}
+/* ===== HELP DESK ===== */
+.helpdesk-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: none
+  padding 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.helpdesk-container h2 {
+  font-family: "kanit",sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1a73e8;
+}
+
+.helpdesk-container p {
+  font-family: "kanit",sans-serif;
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.helpdesk-form .form-group {
+  margin-bottom: 18px;
+}
+
+.helpdesk-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.helpdesk-form input,
+.helpdesk-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.helpdesk-form input:focus,
+.helpdesk-form textarea:focus {
+  border-color: #1a73e8;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1a73e8;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #1558c0;
+}
