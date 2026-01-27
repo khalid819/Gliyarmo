@@ -3,30 +3,30 @@ from flask_cors import CORS
 from openai import OpenAI
 app = Flask(__name__,static_folder="static")
 CORS(app) 
-OPENROUTER_API_KEY="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"
-def chat():
-   client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key=OPENROUTER_API_KEY,
-  )
+# OPENROUTER_API_KEY="key"
+# def chat():
+#    client = OpenAI(
+#     base_url="https://openrouter.ai/api/v1",
+#     api_key=OPENROUTER_API_KEY,
+#   )
 
-   completion = client.chat.completions.create(
-    extra_headers={
-    "HTTP-Referer": "<YOUR_SITE_URL>", 
-       "X-Title": "<YOUR_SITE_NAME>", 
+#    completion = client.chat.completions.create(
+#     extra_headers={
+#     "HTTP-Referer": "<YOUR_SITE_URL>", 
+#        "X-Title": "<YOUR_SITE_NAME>", 
 
-  },
-  extra_body={},
-  model="openai/gpt-oss-120b:free",
-  messages=[
-    {
-      "role": "user",
-      "content": "What is the meaning of life?"
-    }
-  ]
-)
-   print(completion.choices[0].message.content)
-chat()
+#   },
+#   extra_body={},
+#   model="openai/gpt-oss-120b:free",
+#   messages=[
+#     {
+#       "role": "user",
+#       "content": "What is the meaning of life?"
+#     }
+#   ]
+# )
+#    print(completion.choices[0].message.content)
+# chat()
    
 
 @app.route("/")
