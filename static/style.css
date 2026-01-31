@@ -113,7 +113,7 @@
 }
 .img{
   position: relative;
-  left: 500px;
+  left: 550px;
   display: inline;
   bottom: 100px;
 }
@@ -121,7 +121,7 @@
 .crd{
   color: var(--bgc);
     font-family: var(--scf);
-    width: 250px;
+    width: 210px;
     height: 310px;
     display: flex;
     flex-direction: column;
@@ -132,7 +132,7 @@
     border-radius: 20px;
 }
 .container{
-  bottom: 185px;
+  bottom: 250px;
   display: flex;
 }
 .card{
@@ -140,15 +140,18 @@
   rotate: -15deg;
   z-index: 1;
   background: linear-gradient(to top right,var(--c1),var(--c1sm));
+  bottom:30px
 }
 .card2{
   rotate:-2deg;
   z-index:2;
   background: linear-gradient(to top right,var(--c2sm),var(--c2));
+  bottom:7px
 }
 .card3{
   right: 30px;
   rotate: 12deg;
   z-index: 3;
   background: linear-gradient( to top right,var(--c3),var(--c3sm));
+  top:50px
 }
