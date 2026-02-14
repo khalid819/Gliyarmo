@@ -1,2 +1,2 @@
 # Gliyarmo
-Student friendly edu platform
+A reader and writer’s friendly comprehensive platform 
