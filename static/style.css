@@ -3,17 +3,17 @@
 :root {
   --bgc: hsl(0, 0%, 0%);
   --ngc: hsla(0, 0%, 0%, 0.521);
-  --c1: hsl(356, 34%, 45%);
+  --c1: hsl(356deg 60.45% 39.26%);
   --c1sm: hsl(15, 96%, 81%);
-  --c2: hsl(168, 61%, 50%);
+  --c2: hsl(168, 76%, 53%);
   --c2sm: hsl(123, 100%, 78%);
   --c3: hsl(206, 10%, 57%);
-  --c3sm: hsl(190, 5%, 77%);
+  --c3sm: hsl(190deg 5.81% 89.97%);
   --btn: hsl(116.55deg 61.7% 72.35%);
   --btnsm: hsl(77.32deg 86.59% 67.84%);
   --c: white;
   --bsc:hsl(0, 0%, 17%);
-  --sc: hsl(0deg 0% 35.69%);
+  --sc: hsl(0, 0%, 39%);
   --secbtn: hsl(0, 3%, 21%);
   --hf: "Orbitron", sans-serif;
   --scf: "Zain", sans-serif;
@@ -22,7 +22,6 @@
 
 * {
   margin: 0;
-  /* padding: 0; */
   position: relative;
 
 }
@@ -41,6 +40,7 @@
   width: 100%;
   height: 60px;
   background-color: var(--ngc);
+  backdrop-filter:blur(20px);
   display: flex;
   align-items: center;
 
@@ -50,7 +50,6 @@
   list-style: none;
   padding: 0px 25px;
   cursor: pointer;
-  /* margin-left: 50px; */
 }
 
 .m {
@@ -62,7 +61,7 @@
 
 .nav-list li a {
   text-decoration: none;
-  color: white;
+  color: var(--sc);
   transition: all 0.3s ease;
   display: inline-block;
   font-size: large;
@@ -71,7 +70,7 @@
 
 .nav-list li a:hover {
   text-decoration: none;
-  color: #032cb3;
+  color:var(--c);
   transform: translateY(-2px);
 }
 
@@ -79,7 +78,6 @@
   background-color: var(--bgc);
   background-size: cover;
   background-blend-mode: darken;
-  /* background-size: auto; */
 }
 
 .first {
@@ -109,7 +107,7 @@
   display: flex;
   height: 30px;
   width: 70px;
-  padding: 5px 17px 5px 17px;
+  padding: 5px 17px 5px 17px; 
   text-decoration: none;
   justify-content: center;
   align-items: center;
@@ -118,6 +116,8 @@
   right: 322px;
   background: linear-gradient(to right, var(--btnsm), var(--btn));
   color: var(--bgc);
+  cursor: pointer;
+  z-index:1;
 }
 
 .img {
@@ -131,11 +131,9 @@
   color: var(--bgc);
   font-family: var(--scf);
   width: 210px;
-  height: 310px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 27px;
   position: relative;
   border-radius: 20px;
@@ -175,10 +173,39 @@
   display: flex;
   border-radius: 30px;
   height: 25px;
-  width: 70px;
   padding: 5px 17px 5px 17px;
   text-decoration: none;
   justify-content: center;
   align-items: center;
   position: relative;
+}
+.paraq{
+  color: var(--c);
+  font-family: var(--scf);
+  display: flex;
+ justify-content: center;
+ font-size: xx-large;
+}
+.paraw{
+  font-family: var(--scf);
+  color: var(--c);
+  font-size: larger;
+  padding: 20px;
+}
+.bgc{
+  background: url(https://cdn.pixabay.com/photo/2016/05/11/13/20/keyboard-1385706_1280.jpg) rgba(0, 0, 0, 0.822);
+  background-size: cover;
+  background-blend-mode: darken;
+  height: 100vh;
+}
+.pa{
+  color: var(--c3);
+}
+.par{
+  border-radius: 20px;
+  background-color: rgb(147, 147, 255);
+  text-decoration: none;
+}
+.par:hover{
+  color: var(--bgc);
 }
